@@ -1,0 +1,10 @@
+{
+    "go.toolsManagement.autoUpdate": false,
+    "editor.inlayHints.padding": true,
+    "go.inlayHints.parameterNames": true,
+    "go.inlayHints.functionTypeParameters": true,
+    "go.inlayHints.constantValues": true,
+    "go.inlayHints.compositeLiteralTypes": true,
+    "go.inlayHints.compositeLiteralFields": true,
+    "go.inlayHints.assignVariableTypes": true
+}

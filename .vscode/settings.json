@@ -6,5 +6,8 @@
     "go.inlayHints.constantValues": true,
     "go.inlayHints.compositeLiteralTypes": true,
     "go.inlayHints.compositeLiteralFields": true,
-    "go.inlayHints.assignVariableTypes": true
+    "go.inlayHints.assignVariableTypes": true,
+    "gopls": {
+        "ui.semanticTokens": true
+    }
 }

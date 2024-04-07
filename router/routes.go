@@ -8,12 +8,12 @@ import (
 	"github.com/zVitorSantos/gopportunities.git/handler"
 )
 
-func initializeRoutes(r *gin.Engine) {
+func initializeRoutes(router *gin.Engine) {
 	// Initialize Handler
 	handler.InitializeHandler()
 	basePath := "/api/v1"
 	docs.SwaggerInfo.BasePath = basePath
-	v1 := r.Group(basePath)
+	v1 := router.Group(basePath)
 	{
 		v1.GET("/opening", handler.ShowOpeningHandler)
 		v1.POST("/opening", handler.CreateOpeningHandler)
@@ -23,5 +23,5 @@ func initializeRoutes(r *gin.Engine) {
 	}
 
 	// Initialize Swagger
-	r.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerfiles.Handler))
+	router.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerfiles.Handler))
 }
